@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- <script src="tooltip-title.js"></script> -->
+    <!-- <script src="tooltip-basic.js"></script> -->
+    <script src="tooltip.js"></script>
+
+    <style>
+      .x-axis path,
+      .y-axis path,
+      .x-axis line,
+      .y-axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+      }
+
+      .x-axis text,
+      .y-axis text {
+        font-family: sans-serif;
+        font-size: 11px;
+      }
+
+      h2 {
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      div.tooltip {
+        position: absolute;
+        text-align: center;
+        max-width: 200px;
+        height: auto;
+        padding: 5px;
+        background: lightsteelblue;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        font-family: sans-serif;
+        font-size: 12px;
+        pointer-events: none;
+      }
+    </style>
+    <title>D3.js - Tooltip</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Content -->
+    </div>
+  </body>
+</html>

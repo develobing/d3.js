@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <title>D3.js</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">
+        <h3>SVG</h3>
+
+        <svg width="250" height="50" style="border: 1px solid #ccc">
+          <text x="0" y="25">SVG Text Test</text>
+        </svg>
+      </div>
+
+      <div class="item">
+        <h3>D3.js</h3>
+
+        <script>
+          d3.select('.item:nth-child(2)')
+            .append('svg')
+            .attr('width', 250)
+            .attr('height', 50)
+            .style('border', '1px solid #ccc')
+            .append('text')
+            .text('D3.js Text Test')
+            .attr('x', 0)
+            .attr('y', 25)
+            .style('fill', '#317212');
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
