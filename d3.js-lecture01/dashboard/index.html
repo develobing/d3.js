@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="functions.js"></script>
+    <script src="map.js"></script>
+    <script src="top-bar.js"></script>
+    <script src="sparklines.js"></script>
+
+    <title>D3.js - Dashboard</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="dashboardTitle">2013 Sales Dashboard</h1>
+
+      <div class="topChart" style="float: left; width: 800px">
+        <h2>Sales by Month (Colored by profit)</h2>
+        <svg id="barChartLegend"></svg>
+        <svg id="barChart"></svg>
+      </div>
+
+      <div class="bottomChart">
+        <div id="bottomLeft" style="float: left; width: 400px"></div>
+
+        <div id="bottomRight" style="float: right; width: 400px">
+          <h2>Sales by State</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
