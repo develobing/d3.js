@@ -1,6 +1,6 @@
 async function draw() {
   // Data
-  const dataset = await d3.json('/d3-scatterplot/data.json');
+  const dataset = await d3.json('./data.json');
   console.log('dataset', dataset);
 
   const xAccessor = (d) => d.currently.humidity;
